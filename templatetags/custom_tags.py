@@ -33,7 +33,6 @@ def querystring_without_page(context):
 
 @register.filter(name='is_image')
 def is_image(filename):
-    print(filename)
     if filename:
         img_ext = tuple(settings.CUSTOM_FILE_EXTENSIONS) 
         return filename.lower().endswith(img_ext)
