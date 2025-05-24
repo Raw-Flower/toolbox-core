@@ -12,3 +12,6 @@ migrations/
 
 # Media files
 media/
+
+# Templatetags
+templatetags/__pycache__.py
