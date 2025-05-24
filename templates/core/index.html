@@ -1,0 +1,20 @@
+{% extends 'core/base/basic_base.html' %}
+{% block title %}Index{% endblock title %}
+{% block body %}
+<div class="row">
+    <div class="col-5 mt-3">
+        
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Toolbox main menu</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href='{% url "users:home" %}' class="card-link">User management</a></li>
+              <li class="list-group-item"><a href='{% url "image_mngt:index" %}' class="card-link">Image uploader helper</a></li>
+              <li class="list-group-item"><a href="#" class="card-link">PDF & Report generator</a></li>
+              <li class="list-group-item"><a href="#" class="card-link">Contact form + Email sender</a></li>
+              <li class="list-group-item"><a href="#" class="card-link">Simple cart/Checkout system</a></li>
+            </ul>
+          </div>
+
+    </div>
+</div>
+{% endblock body %}
