@@ -1,7 +1,9 @@
 {% load custom_tags %}
 {% if form %}
     <fieldset class="border rounded-2 p-3">
-        <legend class="float-none w-auto px-3" >{{title}}</legend>
+        {% if title %}
+            <legend class="float-none w-auto px-3">{{title}}</legend>
+        {% endif %}
         {% for input in form %}
             <div class='mb-3'>
                 {% if input.help_text != 'filter_option' %}
